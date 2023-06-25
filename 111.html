@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    .out{
+        width: 200px;
+ height: 200px;
+ border: 1px solid;
+    }
+    .box {
+ width: 200px;
+ height: 200px;
+ background: blue;
+ transition: 3s;
+}
+.out:hover .box{
+    border-radius: 50%;
+    background: red;
+    margin-left: 300px;
+    border: 5px yellow dashed;-webkit-box-shadow: 50px 30px 59px 15px rgba(0,0,0,0.75);
+-moz-box-shadow: 50px 30px 59px 15px rgba(0,0,0,0.75);
+box-shadow: 50px 30px 59px 15px rgba(0,0,0,0.75);
+}
+
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
