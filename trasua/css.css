@@ -1,0 +1,161 @@
+
+header{
+    background-color: lightcyan;
+
+}
+.banner {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+    color: rgb(1, 17, 22);
+    
+}
+.logo{
+    animation-name: ka;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    left: 200px;
+    animation-iteration-count: infinite;
+    
+}
+.nav h3{
+    display: inline;
+    text-decoration: unset;
+}
+.nav {
+    padding-right: 40px;
+}
+@keyframes ka {
+    0%{ 
+        
+    }
+    50% { padding-left: 100px;
+    }
+    100%{ padding-left: 200px;
+    }}
+.slide-1 .images{
+    height: 500px;
+    width: 100%;
+}
+.box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.box-1{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #f50a0a;
+    position: relative;
+}
+.box-1 img{
+width: 100%;
+height: 400px;
+border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    opacity: 0;
+    transition: 1s;
+    top: 0;
+}
+.box-1:hover .overlay {
+    opacity: 1;
+}
+.box-2{
+    width: 80%;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.box-1:hover .box-2 {   
+    opacity: 1;
+}
+.tittle{
+    justify-content: center;
+    color: red;
+    display: flex;
+    font-size: 30px;
+}
+.footer {
+    background: black;
+    height: 300px;
+    color: red;
+    font-size: 30px;
+}
+.footer img{
+    width: 70%;
+    height: 200px;
+   position: absolute;
+   top: 45px;
+   left: 70px;
+}
+.howtobuy-1{
+    display: flex;
+    text-align: center;
+}
+.col{
+    display: flex;
+}
+.col .imga-1{
+    margin-top: 100px;
+    margin-left: 5px;
+}
+@media only screen and (max-width:500px) {
+    .box{
+        display: unset;
+    }
+    .logo{
+        animation: unset;
+        
+    }
+    .banner .a{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:768px) {
+    .howtobuy-1{
+        width: 400px;
+        height: 200px;
+        padding-left: 150px;
+    }
+    .nav h3 {
+        margin-left: 45px;
+    }
+    .logo{
+        animation: unset;
+    }
+    .box-1 img{
+        height: 200px;
+    }
+    .box-2{
+        bottom: 50px;
+        font-size: 10px;
+    }
+   .col img{
+    height: 100px;
+    width: 50px;
+   }
+   .col .imga-1 {
+    margin-top: 50px;
+    height: 20px;
+    width: 20px;
+   }
+
+}
